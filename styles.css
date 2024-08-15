@@ -1,3 +1,87 @@
-label {
-    display: inline-flex;
-}
+html {
+    height: 100%;
+    width: 100%;
+    -webkit-text-size-adjust: none; /* for iOS Safari */
+    text-size-adjust: none; /* for other mobile browsers */
+  }
+  
+  body {
+      font-family: 'Bodoni Moda SC', serif;
+      background-color: #eea35d;
+  }
+  
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+      font-family: 'Bodoni Moda SC', serif;
+  }
+  
+  img {
+      display: block;
+      max-width: 100%;
+  }
+  
+  header {
+      font-family: 'Bodoni Moda SC', serif;
+  }
+  
+  button {
+      color: #fbf9f9;
+      background-color: #0c0703;
+  }
+  
+  button:hover {
+      background-color: #e4111c;
+  }
+  
+  label {
+    font-family: 'Bodoni Moda SC', serif;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  
+  menu:not(article menu),
+  ol:not(article ol),
+  ul:not(article ul) {
+      list-style: none;
+  }
+  
+  menu,
+  ol,
+  ul {
+      padding-left: 0;
+  }
+  
+  article ol,
+  article ul {
+      list-style-position: inside;
+  }
+  
+  a {
+      text-underline-position: under;
+      text-decoration-thickness: 8;
+      color: #3184ddff;
+  }
+  
+  a:hover {
+      color: #cc1eccee;
+  }
+  
+  
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+          scroll-behavior: smooth;
+    }
+  }
+  
+  label,
+  button,
+  select,
+  summary,
+  [type=radio],
+  [type=submit],
+  [type=checkbox] {
+      cursor: pointer;
+  }

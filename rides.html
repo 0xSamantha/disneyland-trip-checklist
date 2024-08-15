@@ -3,59 +3,62 @@
 
 <head>
     <title>rides!</title>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header>disney rides!</header>
     <main>
+        <button class="back-button" type="button" onclick="window.location.href='index.html'">Go Back</button>
         <form>
-          <input type="checkbox" id="rideCheckbox1" class="scoreCheckbox adventureland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride1" class="scoreCheckbox adventureland disneyland" data-score="1"><br>
           <label for="rideCheckbox1">Indiana Jones</label><br>
-          <input type="checkbox" id="rideCheckbox2" class="scoreCheckbox new-orleans-square disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride2" class="scoreCheckbox new-orleans-square disneyland" data-score="1" onclick="updateScore()"><br>
           <label for="rideCheckbox2">Pirates of the Caribbean</label><br>
-          <input type="checkbox" id="rideCheckbox3" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride3" class="scoreCheckbox fantasyland disneyland" data-score="1" onclick="updateScore()"><br>
           <label for="rideCheckbox3">It's a Small World</label><br>
-          <input type="checkbox" id="rideCheckbox4" class="scoreCheckbox frontierland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride4" class="scoreCheckbox frontierland disneyland" data-score="1" onclick="updateScore()"><br>
           <label for="rideCheckbox4">Thunder Mountain Railroad</label><br>
-          <input type="checkbox" id="rideCheckbox5" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride5" class="scoreCheckbox tomorrowland disneyland" data-score="1" onclick="updateScore()"><br>
           <label for="rideCheckbox5">Space Mountain</label><br>
-          <input type="checkbox" id="rideCheckbox5" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride5" class="scoreCheckbox fantasyland disneyland" data-score="1" onclick="updateScore()"><br>
           <label for="rideCheckbox5">Matterhorn</label><br>
-          <input type="checkbox" id="rideCheckbox6" class="scoreCheckbox galaxys-edge disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride6" class="scoreCheckbox galaxys-edge disneyland" data-score="1" onclick="updateScore()"><br>
           <label for="rideCheckbox6">Millennium Falcon: Smuggler's Run</label><br>
-          <input type="checkbox" id="rideCheckbox7" class="scoreCheckbox galaxys-edge disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride7" class="scoreCheckbox galaxys-edge disneyland" data-score="1" onclick="updateScore()"><br>
           <label for="rideCheckbox7">Rise of the Resistance</label><br>
-          <input type="checkbox" id="rideCheckbox8" class="scoreCheckbox adventureland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride8" class="scoreCheckbox adventureland disneyland" data-score="1"><br>
           <label for="rideCheckbox8">Jungle Cruise</label><br>
-          <input type="checkbox" id="rideCheckbox9" class="scoreCheckbox frontierland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride9" class="scoreCheckbox frontierland disneyland" data-score="1"><br>
           <label for="rideCheckbox9">Big Thunder Mountain Railroad</label><br>
-          <input type="checkbox" id="rideCheckbox10" class="scoreCheckbox new-orleans-square disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride10" class="scoreCheckbox new-orleans-square disneyland" data-score="1"><br>
           <label for="rideCheckbox10">Haunted Mansion</label><br>
-          <input type="checkbox" id="rideCheckbox11" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride11" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
           <label for="rideCheckbox11">Peter Pan's Flight</label><br>
-          <input type="checkbox" id="rideCheckbox12" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride12" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
           <label for="rideCheckbox12">It's a Small World </label><br>
-          <input type="checkbox" id="rideCheckbox13" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride13" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
           <label for="rideCheckbox13">Mad Tea Party</label><br>
-          <input type="checkbox" id="rideCheckbox14" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride14" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
           <label for="rideCheckbox14">Mr Toad's Wild Ride</label><br>
-          <input type="checkbox" id="rideCheckbox15" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride15" class="scoreCheckbox fantasyland disneyland" data-score="1"><br>
           <label for="rideCheckbox15">Snow White's Scary Adventures</label><br>
-          <input type="checkbox" id="rideCheckbox16" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride16" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
           <label for="rideCheckbox16">Autopia</label><br>
-          <input type="checkbox" id="rideCheckbox17" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride17" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
           <label for="rideCheckbox17">Buzz Lightyear Astro Blasters</label><br>
-          <input type="checkbox" id="rideCheckbox18" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride18" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
           <label for="rideCheckbox18">Finding Nemo Submarine Voyage</label><br>
-          <input type="checkbox" id="rideCheckbox19" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride19" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
           <label for="rideCheckbox19">Star Tours</label><br>
-          <input type="checkbox" id="rideCheckbox20" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
+          <input type="checkbox" id="ride20" class="scoreCheckbox tomorrowland disneyland" data-score="1"><br>
           <label for="rideCheckbox20">Astro Orbiter</label><br>
-          <input type="checkbox" id="rideCheckbox20" class="scoreCheckbox avengers-campus dca" data-score="1"><br>
-          <label for="rideCheckbox20">Guardians of the Galaxy - Mission: Breakout </label><br>
         </form>
     </main>
 </body>
